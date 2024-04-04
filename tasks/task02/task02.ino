@@ -26,12 +26,9 @@ void setup() {
   pinMode(pin10,OUTPUT);
   
   taskid_t task1 = taskManager.scheduleFixedRate(period3, [] {
-    if(state3==LOW)
-	  {
+    if(state3==LOW) {
       state3=HIGH;  
-    }
-    else
-	  {
+    } else {
       state3=LOW;
     }  
 	
@@ -39,12 +36,9 @@ void setup() {
   }, TIME_MICROS);
   
   taskid_t task2 = taskManager.scheduleFixedRate(period5, [] {
-    if(state5==LOW)
-	  {
+    if(state5==LOW) {
       state5=HIGH;  
-    }
-    else
-	  {
+    } else {
       state5=LOW;
     }   
 	
@@ -52,12 +46,9 @@ void setup() {
   }, TIME_MICROS);
   
   taskid_t task3 = taskManager.scheduleFixedRate(period6, [] {
-    if(state6==LOW)
-	  {
+    if(state6==LOW) {
       state6=HIGH;  
-    }
-    else
-	  {
+    } else {
 	  state6=LOW;
     }    
 	
@@ -65,12 +56,9 @@ void setup() {
   }, TIME_MICROS);
   
   taskid_t task4 = taskManager.scheduleFixedRate(period9, [] {
-    if(state9==LOW)
-	  {
+    if(state9==LOW) {
       state9=HIGH;  
-    }
-    else
-	  {
+    } else {
       state9=LOW;
     }    
 	
@@ -78,12 +66,9 @@ void setup() {
   }, TIME_MICROS);
   
   taskid_t task5 = taskManager.scheduleFixedRate(period10, [] {
-    if(state10==LOW)
-	  {
+    if(state10==LOW) {
       state10=HIGH;  
-    }
-    else
-	  {
+    } else {
       state10=LOW;
     }    
 	
